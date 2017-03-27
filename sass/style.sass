@@ -1,6 +1,8 @@
 $blue: #2077b2
 $primary: $blue
-$grey-dark: #42464c
+$grey-dark: rgba(0, 0, 0, 0.8)
+$grey-dark-2: #42464c
+$white: rgba(255, 255, 255, 0.9)
 $family-sans-serif: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif
 
 @import "node_modules/bulma/bulma"
@@ -25,8 +27,23 @@ $family-sans-serif: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hira
 html
   background-color: transparent
 
+.nav
+  background-color: transparent
+
 .section
-  padding: 40px 20px
+  margin: 40px auto
+  max-width: 800px
+  width: 75%
+  background-color: $white
+
+.section-nav
+  background-color: transparent
+
+.section-pager
+  background-color: transparent
+
+.section-footer
+  background-color: transparent
 
 .nav .level-item
   margin-left: 10px
@@ -50,8 +67,6 @@ code
   color: inherit
   background-color: transparent
   font-size: 90%
-
-
 
 article+article
   margin-top: 80px
